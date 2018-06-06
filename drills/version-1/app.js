@@ -1,7 +1,8 @@
 const baseUrl = 'https://restcountries.eu/rest/v2/all'
 let baseUrl2 = 'https://restcountries.eu/rest/v2/name'
 const dropDown = document.querySelector('#dropDown')
-document.querySelector('select').addEventListener('change', getValues)
+var selector = document.querySelector("select");
+selector.addEventListener("change", getValues);
 
 (function getCountries() {
     fetch(baseUrl)
@@ -14,13 +15,17 @@ document.querySelector('select').addEventListener('change', getValues)
 function getValues() {
     const country = dropDown.options[dropDown.selectedIndex].value
     const url = baseUrl2 + `/${country}`
-    console.log('it changed');
 
-    
     fetch(url)
         .then(response => response.json())
         .then(renderInfo)
+        .then(selector)
 
+}
+
+function selector() {
+    selector.addEventListener("change", getValues);
+    
 }
 
 function fillDropDown(countries) {
