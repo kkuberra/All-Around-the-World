@@ -4,10 +4,12 @@
   "description": "For this project, you will build a light application that reads data, has end-to-end testing, and integrates with an API. The topic is up to you, so pick a project that speaks to your interests.",
   "main": "app.js",
   "scripts": {
-    "test": "npx cypress run"
+    "start": "app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kyle Kuberra",
   "license": "ISC",
   "dependencies": {
     "cypress": "^3.0.1"
