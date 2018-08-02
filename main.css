@@ -1,0 +1,47 @@
+body {
+  /* padding-top: 2vw; */
+  margin: 0vw 3vw;
+  background-color: #a3a3a3;
+  background-image: url("https://www.transparenttextures.com/patterns/subtle-grunge.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+#dropDown {
+  font-size: 15px;
+  box-shadow: #333 0.25vw 0.25vw 0.25vw;
+  height: 2.5rem;
+}
+
+label {
+  margin-left: 35%;
+  font-family: "Jaldi", sans-serif;
+  text-align: center;
+}
+
+img {
+  margin-top: 15px;
+  margin-left: 15%;
+  height: 25em;
+  width: auto;
+  box-shadow: #333 0.25vw 0.25vw 0.25vw;
+}
+
+.country-info {
+  display: flex;
+  font-family: "Jaldi", sans-serif;
+}
+
+.country-info div {
+  padding: 0vw 4vw;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Jaldi", sans-serif;
+}
+
+h3 {
+  font-family: "Jaldi", sans-serif;
+  text-align: center;
+  line-height: .5;
+}
